@@ -1,0 +1,64 @@
+
+/*********ADMIN TABLE SQL CODE**********/
+
+CREATE TABLE admins(
+idAdmins int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+adminname text NOT NULL,
+adminuid tinytext NOT NULL,
+adminemailid text NOT NULL);
+
+
+/**********BOOKS TABLE SQL CODE**********************/
+
+
+CREATE TABLE books(
+bid int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+bname text NOT NULL,
+bauthor text NOT NULL,
+sem int(2) NOT NULL,
+link longtext NOT NULL);
+
+
+/*******NOTICE TABLE SQL CODE********/
+
+CREATE TABLE notice(
+idNotice int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+submitdate date NOT NULL,
+nsubject longtext NOT NULL,
+nmessage longtext NOT NULL);
+
+
+/*******QUOTES TABLE SQL CODE********/
+
+CREATE TABLE tablequotes(
+submitid int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+quotes longtext NOT NULL);
+
+
+
+/*********ADMIN UNIQUE CODE TABLE SQL CODE**********/
+
+CREATE TABLE uniquecode(
+id INT(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+unicode longtext NOT NULL);
+
+
+
+
+/********USRES TABLE SQL CODE*********/
+
+
+CREATE TABLE users(
+id int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+uname text NOT NULL,
+uid tinytext NOT NULL,
+emailid text NOT NULL,
+pwd longtext NOT NULL);
+
+
+
+
+
+
+
+
